@@ -48,6 +48,7 @@
         assign_public_ip: True
         hostname_label: "{{ instance_hostname }}"
         subnet_id: "ocid1.subnet.oc1.ap-hyderabad-1.aaaaaaaaxab4sf35bv47o7jqkmx6ck2r3m2fgplafquo3luv5y6obkpggaea"
+        private_ip: '10.0.0.25'
     metadata:
         ssh_authorized_keys: "{{ lookup('file',  my_test_public_key ) }}"
   register: result
